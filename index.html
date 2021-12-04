@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h3 class="app_name">IP Address Tracker</h3>
+        <div class="search__box">
+          <form action="" id="form">
+            <input placeholder="Search for any IP address or domain" type="search" name="ip_address" id="search">
+          </form>
+          <span class="search_button">
+            <img src="images/icon-arrow.svg" alt="">
+          </span>
+          </input>
+        </div>
+        <div class="detail__box">
+          <div class="detail__box-ip">
+            <p class="detail__box-title">ip address</p>
+            <h3 class="detail__box-data ip"></h3>
+          </div>
+          <div class="line"></div>
+          <div class="detail__box-location">
+            <p class="detail__box-title">location</p>
+            <h3 class="detail__box-data location"></h3>
+          </div>
+          <div class="line"></div>
+          <div class="detail__box-timezone">
+            <p class="detail__box-title">timezone</p>
+            <h3 class="detail__box-data timezone"></h3>
+          </div>
+          <div class="line"></div>
+          <div class="detail__box-isp">
+            <p class="detail__box-title">isp</p>
+            <h3 class="detail__box-data isp"></h3>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="map"></div>
+
+    </main>
+
+    <!-- IP Address Tracker
+
+  Search for any IP address or domain
+
+  IP Address
+  Location
+  Timezone
+    UTC  -->
+    <!-- add offset value dynamically using the API -->
+    <!-- ISP- -->
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
